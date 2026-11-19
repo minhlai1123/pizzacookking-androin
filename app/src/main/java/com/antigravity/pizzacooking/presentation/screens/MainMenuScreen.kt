@@ -120,7 +120,7 @@ fun MainMenuScreen(
             ) {
                 Icon(
                     imageVector = if (isMuted) Icons.Default.VolumeMute else Icons.Default.VolumeUp,
-                    contentDescription = "Âm thanh",
+                    contentDescription = "Sound",
                     tint = CreamDoughWhite,
                     modifier = Modifier.size(26.dp)
                 )
@@ -211,7 +211,7 @@ fun MainMenuScreen(
                             .padding(horizontal = 14.dp, vertical = 4.dp)
                     ) {
                         Text(
-                            text = "20 MÓN CÔNG THỨC 🌟",
+                            text = "20 MASTER RECIPES 🌟",
                             color = CreamDoughWhite,
                             fontSize = 12.sp,
                             fontWeight = FontWeight.ExtraBold
@@ -248,12 +248,12 @@ fun MainMenuScreen(
                         ) {
                             Icon(
                                 imageVector = Icons.Default.PlayArrow,
-                                contentDescription = "Bắt đầu chơi",
+                                contentDescription = "Play Game",
                                 tint = CreamDoughWhite,
                                 modifier = Modifier.size(68.dp)
                             )
                             Text(
-                                text = "CHƠI NGAY!",
+                                text = "PLAY NOW!",
                                 color = CreamDoughWhite,
                                 fontSize = 14.sp,
                                 fontWeight = FontWeight.Black
@@ -264,7 +264,7 @@ fun MainMenuScreen(
                     Spacer(modifier = Modifier.height(10.dp))
 
                     Text(
-                        text = "Chạm vào để bắt đầu làm pizza!",
+                        text = "Tap to start baking pizza!",
                         color = DarkCharcoal,
                         fontSize = 13.sp,
                         fontWeight = FontWeight.Bold

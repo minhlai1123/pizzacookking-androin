@@ -417,11 +417,11 @@ private fun TopBarNavigation(
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     // Recipe & Difficulty Tag
                     val badgeStr = when (difficultyTier) {
-                        1 -> "⭐ DỄ"
-                        2 -> "⭐⭐ VỪA"
-                        else -> "⭐⭐⭐ THỬ THÁCH"
+                        1 -> "⭐ EASY"
+                        2 -> "⭐⭐ MEDIUM"
+                        else -> "⭐⭐⭐ HARD"
                     }
-                    val recipeTitle = localizedInfo?.nameVi ?: recipe?.name ?: "PIZZA THƠM NGON"
+                    val recipeTitle = localizedInfo?.nameEn ?: recipe?.name ?: "DELICIOUS PIZZA"
                     Text(
                         text = "[$badgeStr] $recipeTitle".uppercase(),
                         color = WarmTomatoRed,
@@ -984,7 +984,7 @@ private fun OvenBakingStageInteractive(
 
                     if (difficultyTier == 3) {
                         // Hard mode: Heat Gauge Needle
-                        Text(text = "Dừng kim ở vạch VÀNG HOÀN HẢO! ⭐", color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                        Text(text = "Stop needle in the PERFECT GOLD zone! ⭐", color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Bold)
                         Spacer(modifier = Modifier.height(8.dp))
 
                         // Gauge Bar
@@ -1041,7 +1041,7 @@ private fun OvenBakingStageInteractive(
                                 }
                                 .padding(horizontal = 20.dp, vertical = 8.dp)
                         ) {
-                            Text(text = "🔥 LẤY BÁNH RA NGAY! 🔥", color = Color.White, fontSize = 13.sp, fontWeight = FontWeight.Black)
+                            Text(text = "🔥 TAKE PIZZA OUT NOW! 🔥", color = Color.White, fontSize = 13.sp, fontWeight = FontWeight.Black)
                         }
                     } else {
                         // Easy & Medium mode: Cheerful countdown

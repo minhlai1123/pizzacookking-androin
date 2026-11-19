@@ -1,86 +1,84 @@
 # Pizza Cooking World — Android
 
-Trò chơi nấu ăn Pizza dành cho trẻ em (Kids Cooking Game) được phát triển bằng **Native Kotlin** và **Jetpack Compose**. Game hoạt động **100% Offline**, không yêu cầu kết nối mạng, không quảng cáo, và bảo đảm an toàn cho trẻ nhỏ.
+A fun and engaging **Kids Pizza Cooking Game** built with **Native Kotlin** and **Jetpack Compose**. The game runs **100% Offline** with zero backend, zero external asset downloads, no advertisements, and zero tracking — completely safe for toddlers and children.
 
 ---
 
-## 🌟 Tính Năng Nổi Bật
+## 🌟 Key Features
 
-- **20 Món Pizza Đa Dạng (R-01 đến R-20):**
-  - Danh mục công thức đầy đủ từ các loại Pizza truyền thống (Margherita, Pepperoni, Hawaii, BBQ Chicken, Hải sản...) đến các món tráng miệng & sáng tạo độc đáo (Chocolate Berry, Marshmallow, Rainbow Unicorn, Trái cây mùa hè...).
-  - Menu lựa chọn công thức trực quan với hình minh họa hoạt hình bắt mắt, tên tiếng Việt thân thiện với trẻ nhỏ.
-- **Hệ Thống Phân Cấp Độ (Difficulty Levels):**
-  - **Level 1 (Dễ):** Dành cho bé nhỏ tuổi với hướng dẫn vòng sáng mục tiêu (Sparkling rings), thao tác chạm nhanh gọn, tự động canh lò chuẩn 3 sao.
-  - **Level 2 (Vừa):** Cần phủ đều sốt phô mai $\ge 75\%$, phân bổ topping đúng vị trí theo công thức.
-  - **Level 3 (Thử thách):** Phủ sốt $\ge 85\%$ và minigame **Canh Lửa Lò Nướng (Heat Needle Gauge)**: người chơi bấm "Lấy bánh ra ngay!" khi kim nhiệt độ rơi vào vùng sao vàng để đạt điểm tuyệt đối.
-  - **No-Bake:** Nhóm món tráng miệng mát lạnh không cần nướng (Watermelon Pizza, Berry Tart).
-- **Giao Diện Hoạt Hình (Cartoon Visuals):**
-  - Khung cảnh tiệm bánh Pizzeria phong cách hoạt hình với mái che sọc đỏ trắng, mây trời rực rỡ.
-  - Màn hình nhà bếp nhìn ra cửa sổ trời xanh, chậu cây húng tây xanh mát, bàn gỗ sồi ấm áp.
-  - Thớt và đế pizza tròn đều tỷ lệ 1:1, các loại topping (xúc xích, nấm, ớt chuông, ô liu, tôm, phô mai...) vẽ bằng Compose Canvas sinh động.
-- **Nhạc Nền & Hiệu Ứng Âm Thanh BGM Tự Sinh (Procedural BGM Synthesizer):**
-  - Tự động tổng hợp âm thanh đa âm phong cách Marimba/Accordion Ý tươi vui qua `AudioTrack` native.
-  - Hoạt động offline 100%, không cần tải file âm thanh nặng từ bên ngoài.
-  - Nút bật/tắt âm thanh (Mute/Unmute) tiện lợi ở mọi màn hình.
+- **20 Diverse Master Pizza Recipes (R-01 through R-20):**
+  - Comprehensive recipe catalog ranging from classic savory pizzas (Margherita, Pepperoni, Hawaii, BBQ Chicken, Seafood...) to sweet dessert pizzas (Chocolate Berry, Marshmallow, Rainbow Unicorn, Summer Watermelon...).
+  - Child-friendly visual menu with colorful 2D cartoon illustrations, clear English recipe titles, and detailed descriptions.
+- **Progressive Difficulty Tiers:**
+  - **Level 1 (Easy - 6 Recipes):** Designed for young toddlers with sparkling target rings, quick tap interactions, and automatic 3-star baking.
+  - **Level 2 (Medium - 9 Recipes):** Requires $\ge 75\%$ sauce coverage, recipe-matching toppings, and standard prep steps.
+  - **Level 3 (Hard / Challenge - 5 Recipes):** Requires $\ge 85\%$ sauce coverage, precision topping placement, and an interactive **Heat Needle Gauge Minigame**: players tap "Take Pizza Out Now!" when the needle enters the golden star zone.
+  - **No-Bake Category (2 Recipes):** Chilled dessert treats (Summer Watermelon Pizza, Berry Fruit Tart) that skip oven baking.
+- **Rich Cartoon Visual Art:**
+  - Italian Pizzeria shopfront with red-and-white striped awning, sunny blue sky, and fluffy clouds.
+  - Kitchen background featuring an outdoor window view, green potted basil plant, and warm polished oak countertops.
+  - True 1:1 circular wooden cutting board and pizza dough, paired with vibrant custom Compose Canvas topping graphics.
+- **Procedural BGM Synthesizer (100% Offline):**
+  - Built-in polyphonic Italian marimba & accordion melody generated at runtime via native `AudioTrack` hardware static loop synthesis.
+  - Zero external MP3/audio files required; ultra-low memory footprint.
+  - Audio Mute / Unmute controls accessible across all screens.
 
 ---
 
-## 🛠️ Công Nghệ & Kiến Trúc
+## 🛠️ Architecture & Tech Stack
 
-- **Ngôn ngữ:** Kotlin 2.0.0
+- **Language:** Kotlin 2.0.0
 - **UI Framework:** Jetpack Compose (Compose BOM 2024.06.00, Material 3)
-- **Kiến trúc:** Clean Architecture + Unidirectional Data Flow (UDF) với `StateFlow`
-- **Âm thanh:** `AudioTrack` Hardware Static Loop Synthesizer
-- **Min SDK:** 26 (Android 8.0 Oreo) | **Target SDK:** 34 (Android 14)
-- **Kiểm thử:** JUnit 4 Unit Tests (100% passed)
+- **Architecture Pattern:** Clean Architecture + Unidirectional Data Flow (UDF) with `StateFlow`
+- **Audio Engine:** `AudioTrack` Hardware Static Loop Procedural Synthesizer
+- **SDK Support:** Min SDK 26 (Android 8.0 Oreo) | Target SDK 34 (Android 14)
+- **Quality Assurance:** JUnit 4 Unit Tests (100% Green / Passed)
 
 ---
 
-## 🚀 Hướng Dẫn Cài Đặt & Chạy Ứng Dụng
+## 🚀 Getting Started
 
-### 1. Yêu cầu hệ thống
-- Android Studio Iguana / Jellyfish / Koala hoặc mới hơn.
+### Prerequisites
+- Android Studio Iguana / Jellyfish / Koala or newer.
 - JDK 17.
-- Thiết bị Android hoặc Emulator chạy Android 8.0+ (API 26+).
+- Android device or emulator running Android 8.0+ (API 26+).
 
-### 2. Mở dự án trong Android Studio
-1. Clone repository về máy:
+### Building and Running
+1. Clone the repository:
    ```bash
    git clone https://github.com/minhlai1123/pizzacookking-androin.git
+   cd pizzacookking-androin
    ```
-2. Mở Android Studio, chọn **Open** và chọn thư mục vừa clone.
-3. Chờ Gradle đồng bộ (Sync Project with Gradle Files).
-
-### 3. Chạy Unit Tests
-```bash
-./gradlew testDebugUnitTest
-```
-
-### 4. Build & Cài Đặt APK
-```bash
-./gradlew assembleDebug
-# Cài đặt trực tiếp lên thiết bị cắm qua USB:
-./gradlew installDebug
-```
+2. Open the project folder in Android Studio.
+3. Allow Gradle to sync dependencies.
+4. Run unit tests:
+   ```bash
+   ./gradlew testDebugUnitTest
+   ```
+5. Build and install Debug APK on connected device:
+   ```bash
+   ./gradlew assembleDebug
+   ./gradlew installDebug
+   ```
 
 ---
 
-## 📁 Cấu Trúc Thư Mục
+## 📁 Directory Structure
 
 ```
 ├── app/
 │   ├── src/
 │   │   ├── main/
-│   │   │   ├── assets/data/               # Catalog JSON (nguyên liệu, 20 công thức, dụng cụ)
+│   │   │   ├── assets/data/               # Master JSON catalogs (112 ingredients, 20 recipes, tools)
 │   │   │   ├── java/com/antigravity/pizzacooking/
-│   │   │   │   ├── audio/SoundEffects.kt  # Procedural BGM Synthesizer
+│   │   │   │   ├── audio/SoundEffects.kt  # Procedural Audio & BGM Synthesizer
 │   │   │   │   ├── data/                  # Repositories & Engine Data Contracts
 │   │   │   │   ├── engine/                # Pizza Cooking State Machine & Logic
 │   │   │   │   ├── ui/                    # Jetpack Compose Screens & Components
-│   │   │   │   │   ├── CartoonVisuals.kt  # Cartoon Graphics Canvas
+│   │   │   │   │   ├── CartoonVisuals.kt  # 2D Cartoon Canvas Rendering
 │   │   │   │   │   ├── KitchenScreen.kt   # Kitchen Screen & Oven Minigame
-│   │   │   │   │   ├── MainMenuScreen.kt  # Pizzeria Cartoon Shopfront
-│   │   │   │   │   └── RecipeSelectionScreen.kt # 20 Recipes & Difficulty Tiers
+│   │   │   │   │   ├── MainMenuScreen.kt  # Cartoon Pizzeria Shopfront
+│   │   │   │   │   └── RecipeSelectionScreen.kt # 20 Master Recipes & Difficulty Filter
 │   │   │   │   └── MainActivity.kt
 │   │   │   └── res/
 │   │   └── test/                          # Comprehensive Unit Test Suite
@@ -92,4 +90,4 @@ Trò chơi nấu ăn Pizza dành cho trẻ em (Kids Cooking Game) được phát
 ---
 
 ## 📄 License
-Dự án được bảo hộ bản quyền cho Pizza Cooking World.
+Copyright © Pizza Cooking World. All rights reserved.

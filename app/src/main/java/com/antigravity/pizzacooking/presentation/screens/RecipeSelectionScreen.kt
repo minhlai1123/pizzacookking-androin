@@ -80,12 +80,14 @@ import com.antigravity.pizzacooking.presentation.theme.WarmTomatoRed
 /**
  * Filter Categories for 20-recipe menu
  */
-enum class RecipeFilterCategory(val labelVi: String, val icon: String) {
-    ALL("Tất Cả (20)", "🌟"),
-    EASY("Dễ (6)", "⭐"),
-    MEDIUM("Vừa (9)", "⭐⭐"),
-    HARD("Thử Thách (5)", "⭐⭐⭐"),
-    NO_BAKE("Không Cần Nướng (2)", "🍓")
+enum class RecipeFilterCategory(val label: String, val icon: String) {
+    ALL("All (20)", "🌟"),
+    EASY("Easy (6)", "⭐"),
+    MEDIUM("Medium (9)", "⭐⭐"),
+    HARD("Hard (5)", "⭐⭐⭐"),
+    NO_BAKE("No-Bake (2)", "🍓");
+
+    val labelVi: String get() = label
 }
 
 /**
@@ -93,47 +95,48 @@ enum class RecipeFilterCategory(val labelVi: String, val icon: String) {
  */
 data class RecipeLocalizedInfo(
     val recipeId: String,
-    val nameVi: String,
     val nameEn: String,
     val difficultyTier: Int, // 1 = Easy, 2 = Medium, 3 = Hard
-    val difficultyLabelVi: String,
+    val difficultyLabel: String,
     val badgeColor: Color,
-    val descriptionVi: String
+    val descriptionEn: String,
+    val nameVi: String = nameEn,
+    val difficultyLabelVi: String = difficultyLabel,
+    val descriptionVi: String = descriptionEn
 )
 
 object RecipeMetadataRegistry {
     private val metadataMap = mapOf(
-        "R-01" to RecipeLocalizedInfo("R-01", "Margherita Cổ Điển", "Classic Margherita", 1, "⭐ DỄ", Color(0xFF4CAF50), "Xốt cà chua tươi, phô mai dẻo dai và lá húng quế thơm phức."),
-        "R-02" to RecipeLocalizedInfo("R-02", "Xúc Xích Pepperoni", "Pepperoni Supreme", 1, "⭐ DỄ", Color(0xFF4CAF50), "Xúc xích cay giòn, ớt chuông xanh và ô-liu đen thơm ngon."),
-        "R-03" to RecipeLocalizedInfo("R-03", "Dưa Hấu Mát Lạnh", "Summer Watermelon", 1, "⭐ DỄ", Color(0xFF4CAF50), "Đế dưa hấu mát ngọt, xốt dừa cầu vồng, tráng miệng không cần nướng!"),
-        "R-04" to RecipeLocalizedInfo("R-04", "Kẹo Dẻo & Kẹo Bông", "Sweet Candy & Marshmallow", 1, "⭐ DỄ", Color(0xFF4CAF50), "Bánh quy sô-cô-la đen, kẹo gấu dẻo và kẹo bông xốp ngọt ngào."),
-        "R-05" to RecipeLocalizedInfo("R-05", "4 Vị Phô Mai Béo", "Four Cheese Formaggi", 1, "⭐ DỄ", Color(0xFF4CAF50), "Hòa quyện 4 loại phô mai thơm lừng, kéo sợi cực đã!"),
-        "R-06" to RecipeLocalizedInfo("R-06", "Dứa Hawaii Nhiệt Đới", "Tropical Hawaiian Breeze", 1, "⭐ DỄ", Color(0xFF4CAF50), "Thịt nguội hồng hào cùng những lát dứa vàng tươi chua ngọt."),
-        "R-07" to RecipeLocalizedInfo("R-07", "Kho Báu Cướp Biển", "Ahoy Pirate Treasure", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Truy tìm đồng tiền vàng sô-cô-la trên chiếc pizza cướp biển kỳ bí!"),
-        "R-08" to RecipeLocalizedInfo("R-08", "Halloween Dracula", "Spooky Halloween Vampire", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Đế đen huyền bí, xốt đỏ ma mị và những chú dơi ngộ nghĩnh."),
-        "R-09" to RecipeLocalizedInfo("R-09", "Kỳ Lân Cầu Vồng", "Magical Rainbow Unicorn", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Xốt dâu tây pastel, ngôi sao lấp lánh và sừng kỳ lân diệu kỳ!"),
-        "R-10" to RecipeLocalizedInfo("R-10", "Giáng Sinh Tuyết Trắng", "Winter Wonderland Christmas", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Phô mai tuyết trắng muốt, cây thông xanh và quả châu đỏ rực."),
-        "R-11" to RecipeLocalizedInfo("R-11", "Gà Nướng Sốt BBQ", "Gourmet BBQ Chicken", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Thịt gà nướng mềm ngậy cùng dòng xốt BBQ đậm đà thơm lừng."),
-        "R-12" to RecipeLocalizedInfo("R-12", "Bạch Tuộc Takoyaki", "Japanese Takoyaki", 3, "⭐⭐⭐ THỬ THÁCH", Color(0xFFE91E63), "Phong cách Nhật Bản với bạch tuộc giòn sần sật và rong biển thơm."),
-        "R-13" to RecipeLocalizedInfo("R-13", "Bò Taco Mexico", "Fiesta Mexican Taco", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Thịt bò băm đậm vị cay nhẹ, bánh ngô giòn tan và xốt salsa."),
-        "R-14" to RecipeLocalizedInfo("R-14", "Bữa Sáng Trứng Ốp La", "Sunny Breakfast Egg & Bacon", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Trứng lòng đào vàng ươm cùng thịt xông khói giòn rụm bổ dưỡng."),
-        "R-15" to RecipeLocalizedInfo("R-15", "Nấm Rừng & Truffle", "Wild Forest Mushroom", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Nấm rừng tươi ngon kết hợp hương dầu nấm Truffle sang trọng."),
-        "R-16" to RecipeLocalizedInfo("R-16", "Lễ Hội Xiếc Rực Rỡ", "Circus Fun Carnival", 3, "⭐⭐⭐ THỬ THÁCH", Color(0xFFE91E63), "Bỏng ngô ngọt giòn, kẹo rực rỡ sắc màu như đoàn xiếc vui nhộn!"),
-        "R-17" to RecipeLocalizedInfo("R-17", "Tart Dâu Trái Cây", "Berry Berry Fruit Tart", 2, "⭐⭐ VỪA", Color(0xFFFF9800), "Đế bánh tart mềm, kem ngọt, ngập tràn dâu tây tươi mát lạnh!"),
-        "R-18" to RecipeLocalizedInfo("R-18", "Núi Lửa Cay Bùng Nổ", "Volcano Spicy Pepper", 3, "⭐⭐⭐ THỬ THÁCH", Color(0xFFE91E63), "Ớt chuông lửa bốc khói cay nồng dành cho các đầu bếp dũng cảm!"),
-        "R-19" to RecipeLocalizedInfo("R-19", "Vườn Hoa Rau Củ", "Garden Veggie Bloom", 3, "⭐⭐⭐ THỬ THÁCH", Color(0xFFE91E63), "Xếp bí ngòi, cà chua bi và ớt chuông thành đóa hoa tuyệt đẹp."),
-        "R-20" to RecipeLocalizedInfo("R-20", "Thiên Hà Vũ Trụ", "Royal Galaxy Cosmic", 3, "⭐⭐⭐ THỬ THÁCH", Color(0xFFE91E63), "Đế thiên hà màu tím thẫm, rắc bụi sao vàng và bụi vũ trụ lấp lánh!")
+        "R-01" to RecipeLocalizedInfo("R-01", "Classic Margherita", 1, "⭐ EASY", Color(0xFF4CAF50), "Fresh tomato sauce, melty mozzarella cheese, and fragrant basil."),
+        "R-02" to RecipeLocalizedInfo("R-02", "Pepperoni Supreme", 1, "⭐ EASY", Color(0xFF4CAF50), "Crispy savory pepperoni slices, green bell peppers, and black olives."),
+        "R-03" to RecipeLocalizedInfo("R-03", "Summer Watermelon", 1, "⭐ EASY", Color(0xFF4CAF50), "Juicy sweet watermelon crust, rainbow coconut sauce, no-bake treat!"),
+        "R-04" to RecipeLocalizedInfo("R-04", "Sweet Candy & Marshmallow", 1, "⭐ EASY", Color(0xFF4CAF50), "Dark chocolate crust, chewy gummy bears, and fluffy marshmallows."),
+        "R-05" to RecipeLocalizedInfo("R-05", "Four Cheese Formaggi", 1, "⭐ EASY", Color(0xFF4CAF50), "A rich, gooey blend of four cheeses with delicious cheesy pulls!"),
+        "R-06" to RecipeLocalizedInfo("R-06", "Tropical Hawaiian Breeze", 1, "⭐ EASY", Color(0xFF4CAF50), "Savory ham slices paired with sweet and tangy golden pineapples."),
+        "R-07" to RecipeLocalizedInfo("R-07", "Ahoy Pirate Treasure", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Search for chocolate gold coins on a mysterious high-seas pizza!"),
+        "R-08" to RecipeLocalizedInfo("R-08", "Spooky Halloween Vampire", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Mystic black crust, crimson red sauce, and playful vampire bats."),
+        "R-09" to RecipeLocalizedInfo("R-09", "Magical Rainbow Unicorn", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Pastel strawberry sauce, sparkling stars, and unicorn horn magic!"),
+        "R-10" to RecipeLocalizedInfo("R-10", "Winter Wonderland Christmas", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Snowy white mozzarella, green Christmas trees, and red ornaments."),
+        "R-11" to RecipeLocalizedInfo("R-11", "Gourmet BBQ Chicken", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Tender grilled chicken drizzled with rich, smoky barbecue sauce."),
+        "R-12" to RecipeLocalizedInfo("R-12", "Japanese Takoyaki", 3, "⭐⭐⭐ HARD", Color(0xFFE91E63), "Japanese style with tender octopus chunks, savory mayo, and seaweed."),
+        "R-13" to RecipeLocalizedInfo("R-13", "Fiesta Mexican Taco", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Seasoned ground beef, crispy corn tortilla chips, and zesty salsa."),
+        "R-14" to RecipeLocalizedInfo("R-14", "Sunny Breakfast Egg & Bacon", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Golden sunny-side-up eggs and crispy savory bacon for breakfast."),
+        "R-15" to RecipeLocalizedInfo("R-15", "Wild Forest Mushroom", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Fresh forest mushrooms infused with the aroma of truffle oil."),
+        "R-16" to RecipeLocalizedInfo("R-16", "Circus Fun Carnival", 3, "⭐⭐⭐ HARD", Color(0xFFE91E63), "Sweet crunchy popcorn and rainbow candy confetti just like a circus!"),
+        "R-17" to RecipeLocalizedInfo("R-17", "Berry Berry Fruit Tart", 2, "⭐⭐ MEDIUM", Color(0xFFFF9800), "Soft sweet tart crust, sweet cream, loaded with chilled strawberries!"),
+        "R-18" to RecipeLocalizedInfo("R-18", "Volcano Spicy Pepper", 3, "⭐⭐⭐ HARD", Color(0xFFE91E63), "Smoking fiery peppers bursting with flavor for brave little chefs!"),
+        "R-19" to RecipeLocalizedInfo("R-19", "Garden Veggie Bloom", 3, "⭐⭐⭐ HARD", Color(0xFFE91E63), "Arranged with zucchini ribbons, cherry tomatoes, and veggie petals."),
+        "R-20" to RecipeLocalizedInfo("R-20", "Royal Galaxy Cosmic", 3, "⭐⭐⭐ HARD", Color(0xFFE91E63), "Deep cosmic purple crust sprinkled with golden stardust and glitter!")
     )
 
     fun getInfo(recipeId: String): RecipeLocalizedInfo {
         return metadataMap[recipeId] ?: RecipeLocalizedInfo(
             recipeId = recipeId,
-            nameVi = "Pizza Thơm Ngon",
             nameEn = "Delicious Pizza",
             difficultyTier = 1,
-            difficultyLabelVi = "⭐ DỄ",
+            difficultyLabel = "⭐ EASY",
             badgeColor = Color(0xFF4CAF50),
-            descriptionVi = "Món pizza hảo hạng dành cho bé trổ tài đầu bếp nhí!"
+            descriptionEn = "A gourmet master pizza made by a talented little chef!"
         )
     }
 }
@@ -213,7 +216,7 @@ fun RecipeSelectionScreen(
                     ) {
                         Icon(
                             imageVector = Icons.Default.ArrowBack,
-                            contentDescription = "Quay lại",
+                            contentDescription = "Back",
                             tint = CreamDoughWhite,
                             modifier = Modifier.size(24.dp)
                         )
@@ -234,7 +237,7 @@ fun RecipeSelectionScreen(
                     ) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Text(
-                                text = "🍕 CHỌN MÓN PIZZA CỦA BÉ — 20 MÓN ĐẶC SẮC 🍕",
+                                text = "🍕 CHOOSE YOUR PIZZA — 20 MASTER RECIPES 🍕",
                                 color = CreamDoughWhite,
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight.ExtraBold
@@ -259,7 +262,7 @@ fun RecipeSelectionScreen(
                     ) {
                         Icon(
                             imageVector = if (isAudioMuted) Icons.Default.VolumeMute else Icons.Default.VolumeUp,
-                            contentDescription = "Âm thanh",
+                            contentDescription = "Sound",
                             tint = CreamDoughWhite,
                             modifier = Modifier.size(24.dp)
                         )
@@ -354,7 +357,7 @@ fun RecipeSelectionScreen(
                             .padding(horizontal = 16.dp, vertical = 6.dp)
                     ) {
                         Text(
-                            text = "💡 Bé hãy chọn một chiếc pizza yêu thích để bắt đầu nấu nhé!",
+                            text = "💡 Pick your favorite pizza recipe to start cooking!",
                             color = DarkCharcoal,
                             fontSize = 13.sp,
                             fontWeight = FontWeight.Bold
@@ -381,7 +384,7 @@ fun RecipeSelectionScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = "🎨 CHẾ ĐỘ SÁNG TẠO TỰ DO",
+                            text = "🎨 CREATIVE FREE PLAY",
                             color = CreamDoughWhite,
                             fontSize = 14.sp,
                             fontWeight = FontWeight.ExtraBold
@@ -450,7 +453,7 @@ private fun RecipeMenuCard(
                             .padding(horizontal = 6.dp, vertical = 3.dp)
                     ) {
                         Text(
-                            text = "🍓 KHÔNG NƯỚNG",
+                            text = "🍓 NO-BAKE",
                             color = Color.White,
                             fontSize = 10.sp,
                             fontWeight = FontWeight.Bold
@@ -476,22 +479,13 @@ private fun RecipeMenuCard(
                 CartoonPizzaThumbnail(recipeId = recipe.recipeId, size = 92.dp)
             }
 
-            // Recipe Name in Vietnamese (bold) & English (subtitle)
+            // Recipe Name
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
-                    text = info.nameVi,
-                    color = DarkCharcoal,
-                    fontSize = 15.sp,
-                    fontWeight = FontWeight.ExtraBold,
-                    textAlign = TextAlign.Center,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
-                Text(
                     text = info.nameEn,
-                    color = CrustBrownDark.copy(alpha = 0.7f),
-                    fontSize = 11.sp,
-                    fontWeight = FontWeight.Medium,
+                    color = DarkCharcoal,
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.ExtraBold,
                     textAlign = TextAlign.Center,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
@@ -500,7 +494,7 @@ private fun RecipeMenuCard(
 
             // Short Description
             Text(
-                text = info.descriptionVi,
+                text = info.descriptionEn,
                 color = DarkCharcoal.copy(alpha = 0.75f),
                 fontSize = 10.sp,
                 textAlign = TextAlign.Center,
@@ -521,7 +515,7 @@ private fun RecipeMenuCard(
                 }
             }
 
-            // Big Green "NẤU NGAY 🍕" Button (with 3D bevel)
+            // Big Green "COOK NOW! 🍕" Button (with 3D bevel)
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -538,7 +532,7 @@ private fun RecipeMenuCard(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "NẤU NGAY! 🍕",
+                    text = "COOK NOW! 🍕",
                     color = CreamDoughWhite,
                     fontSize = 13.sp,
                     fontWeight = FontWeight.ExtraBold
