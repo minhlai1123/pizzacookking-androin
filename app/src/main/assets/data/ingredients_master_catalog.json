@@ -1,0 +1,1560 @@
+[
+  {
+    "ingredientId": "ING-001",
+    "name": "Classic Round Dough",
+    "category": "CRUST",
+    "visualIdentifier": "crust_classic_round",
+    "applicableRecipes": [
+      "R-01",
+      "R-02",
+      "R-05",
+      "R-06",
+      "R-11",
+      "R-12",
+      "R-14"
+    ],
+    "compatibleTools": [
+      "TOOL-001"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Knead and roll"
+  },
+  {
+    "ingredientId": "ING-002",
+    "name": "Fresh Watermelon Slab",
+    "category": "CRUST",
+    "visualIdentifier": "crust_watermelon_slab",
+    "applicableRecipes": [
+      "R-03"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Slice thick round slab"
+  },
+  {
+    "ingredientId": "ING-003",
+    "name": "Chocolate Cookie Dough",
+    "category": "CRUST",
+    "visualIdentifier": "crust_chocolate_cookie",
+    "applicableRecipes": [
+      "R-04"
+    ],
+    "compatibleTools": [
+      "TOOL-001"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Roll out cookie dough"
+  },
+  {
+    "ingredientId": "ING-004",
+    "name": "Rainbow Swirl Dough",
+    "category": "CRUST",
+    "visualIdentifier": "crust_rainbow_swirl",
+    "applicableRecipes": [
+      "R-09"
+    ],
+    "compatibleTools": [
+      "TOOL-001"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Braid 5 pastel dough ropes"
+  },
+  {
+    "ingredientId": "ING-005",
+    "name": "Black Charcoal Dough",
+    "category": "CRUST",
+    "visualIdentifier": "crust_black_charcoal",
+    "applicableRecipes": [
+      "R-08"
+    ],
+    "compatibleTools": [
+      "TOOL-001"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Roll out dark bamboo charcoal dough"
+  },
+  {
+    "ingredientId": "ING-006",
+    "name": "Snowflake 6-Point Dough",
+    "category": "CRUST",
+    "visualIdentifier": "crust_snowflake_cut",
+    "applicableRecipes": [
+      "R-10"
+    ],
+    "compatibleTools": [
+      "TOOL-001",
+      "TOOL-012"
+    ],
+    "interactionType": "TAP",
+    "preparationRequirements": "Stamp with snowflake cutter"
+  },
+  {
+    "ingredientId": "ING-007",
+    "name": "Rustic Sourdough Oval",
+    "category": "CRUST",
+    "visualIdentifier": "crust_sourdough_oval",
+    "applicableRecipes": [
+      "R-15"
+    ],
+    "compatibleTools": [
+      "TOOL-001"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Shape oval artisan sourdough"
+  },
+  {
+    "ingredientId": "ING-008",
+    "name": "Scalloped Tart Shell",
+    "category": "CRUST",
+    "visualIdentifier": "crust_scalloped_tart",
+    "applicableRecipes": [
+      "R-17"
+    ],
+    "compatibleTools": [
+      "TOOL-012"
+    ],
+    "interactionType": "TAP",
+    "preparationRequirements": "Press into fluted tart mold"
+  },
+  {
+    "ingredientId": "ING-009",
+    "name": "Flower 6-Petal Herb Dough",
+    "category": "CRUST",
+    "visualIdentifier": "crust_flower_petal",
+    "applicableRecipes": [
+      "R-19"
+    ],
+    "compatibleTools": [
+      "TOOL-001",
+      "TOOL-012"
+    ],
+    "interactionType": "TAP",
+    "preparationRequirements": "Stamp into 6-petal flower"
+  },
+  {
+    "ingredientId": "ING-010",
+    "name": "Cosmic Indigo Dough",
+    "category": "CRUST",
+    "visualIdentifier": "crust_cosmic_indigo",
+    "applicableRecipes": [
+      "R-20"
+    ],
+    "compatibleTools": [
+      "TOOL-001"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Roll out deep indigo starry dough"
+  },
+  {
+    "ingredientId": "ING-011",
+    "name": "San Marzano Tomato Sauce",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_san_marzano",
+    "applicableRecipes": [
+      "R-01",
+      "R-02",
+      "R-06"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Simmer with fresh basil"
+  },
+  {
+    "ingredientId": "ING-012",
+    "name": "Creamy Garlic Alfredo",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_garlic_alfredo",
+    "applicableRecipes": [
+      "R-05",
+      "R-10"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Melt cream and butter"
+  },
+  {
+    "ingredientId": "ING-013",
+    "name": "Pastel Rainbow Fruit Glaze",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_rainbow_puree",
+    "applicableRecipes": [
+      "R-03"
+    ],
+    "compatibleTools": [
+      "TOOL-003",
+      "TOOL-004",
+      "TOOL-006"
+    ],
+    "interactionType": "HOLD",
+    "preparationRequirements": "Blend coconut cream and fresh fruits"
+  },
+  {
+    "ingredientId": "ING-014",
+    "name": "Hazelnut Chocolate Spread",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_hazelnut_chocolate",
+    "applicableRecipes": [
+      "R-04"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Warm gently for silky spread"
+  },
+  {
+    "ingredientId": "ING-015",
+    "name": "Glowing Pumpkin Puree",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_pumpkin_puree",
+    "applicableRecipes": [
+      "R-08"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Puree sweet orange pumpkin"
+  },
+  {
+    "ingredientId": "ING-016",
+    "name": "Honey Teriyaki Glaze",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_honey_teriyaki",
+    "applicableRecipes": [
+      "R-12"
+    ],
+    "compatibleTools": [
+      "TOOL-010"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Simmer soy and honey until glossy"
+  },
+  {
+    "ingredientId": "ING-017",
+    "name": "Strawberry Cotton Candy Puree",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_strawberry_candy",
+    "applicableRecipes": [
+      "R-09",
+      "R-16"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Melt strawberries and cotton candy"
+  },
+  {
+    "ingredientId": "ING-018",
+    "name": "Vibrant Basil Pesto",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_basil_pesto",
+    "applicableRecipes": [
+      "R-19"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Crush basil, pine nuts, and olive oil"
+  },
+  {
+    "ingredientId": "ING-019",
+    "name": "Smoky Barbecue Glaze",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_smoky_bbq",
+    "applicableRecipes": [
+      "R-11"
+    ],
+    "compatibleTools": [
+      "TOOL-010"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Simmer dark brown smoky glaze"
+  },
+  {
+    "ingredientId": "ING-020",
+    "name": "Interstellar Blueberry Swirl",
+    "category": "SAUCE",
+    "visualIdentifier": "sauce_cosmic_blueberry",
+    "applicableRecipes": [
+      "R-20"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Puree wild blackberries and blueberries into cosmic vortex"
+  },
+  {
+    "ingredientId": "ING-021",
+    "name": "Fresh Mozzarella Slices",
+    "category": "CHEESE",
+    "visualIdentifier": "cheese_mozzarella_slices",
+    "applicableRecipes": [
+      "R-01",
+      "R-02",
+      "R-05",
+      "R-06",
+      "R-14"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice fresh round cheese"
+  },
+  {
+    "ingredientId": "ING-022",
+    "name": "Shredded Golden Cheddar",
+    "category": "CHEESE",
+    "visualIdentifier": "cheese_shredded_cheddar",
+    "applicableRecipes": [
+      "R-05",
+      "R-07",
+      "R-11",
+      "R-13"
+    ],
+    "compatibleTools": [
+      "TOOL-005"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Grate cheese block on box grater"
+  },
+  {
+    "ingredientId": "ING-023",
+    "name": "Star-Cut Cheese Slices",
+    "category": "CHEESE",
+    "visualIdentifier": "cheese_star_cut",
+    "applicableRecipes": [
+      "R-09"
+    ],
+    "compatibleTools": [
+      "TOOL-012"
+    ],
+    "interactionType": "TAP",
+    "preparationRequirements": "Stamp cheese with star cutter"
+  },
+  {
+    "ingredientId": "ING-024",
+    "name": "Whipped Ricotta Dollops",
+    "category": "CHEESE",
+    "visualIdentifier": "cheese_ricotta_dollops",
+    "applicableRecipes": [
+      "R-19"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scoop light fluffy cloud dollops"
+  },
+  {
+    "ingredientId": "ING-025",
+    "name": "Lava Red Cheddar",
+    "category": "CHEESE",
+    "visualIdentifier": "cheese_lava_red",
+    "applicableRecipes": [
+      "R-18"
+    ],
+    "compatibleTools": [
+      "TOOL-005"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Shred spicy red habanero cheddar"
+  },
+  {
+    "ingredientId": "ING-026",
+    "name": "Powdered Snow Parmesan",
+    "category": "CHEESE",
+    "visualIdentifier": "cheese_snow_parmesan",
+    "applicableRecipes": [
+      "R-05",
+      "R-10",
+      "R-15"
+    ],
+    "compatibleTools": [
+      "TOOL-005"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Shake fine snowy dusting"
+  },
+  {
+    "ingredientId": "ING-030",
+    "name": "San Marzano Basil Leaves",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_basil_leaves",
+    "applicableRecipes": [
+      "R-01"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pluck fresh leaves"
+  },
+  {
+    "ingredientId": "ING-031",
+    "name": "Sliced Green Bell Peppers",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_green_peppers",
+    "applicableRecipes": [
+      "R-02",
+      "R-10"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice into rings"
+  },
+  {
+    "ingredientId": "ING-032",
+    "name": "Black Kalamata Olives",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_black_olives",
+    "applicableRecipes": [
+      "R-02",
+      "R-08",
+      "R-19"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Cut olive rounds & spider legs"
+  },
+  {
+    "ingredientId": "ING-033",
+    "name": "Red Onion Rings",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_red_onions",
+    "applicableRecipes": [
+      "R-11",
+      "R-18"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice rings"
+  },
+  {
+    "ingredientId": "ING-034",
+    "name": "Wild Forest Chanterelles",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_wild_chanterelles",
+    "applicableRecipes": [
+      "R-15"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice forest mushrooms"
+  },
+  {
+    "ingredientId": "ING-035",
+    "name": "Black Truffle Shavings",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_black_truffle",
+    "applicableRecipes": [
+      "R-15"
+    ],
+    "compatibleTools": [
+      "TOOL-014"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Shave paper-thin on wooden slicer"
+  },
+  {
+    "ingredientId": "ING-036",
+    "name": "Green Jalapeno Rings",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_green_jalapeno",
+    "applicableRecipes": [
+      "R-13",
+      "R-18"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pick with silicone tongs"
+  },
+  {
+    "ingredientId": "ING-037",
+    "name": "Habanero Chili Peppers",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_habanero_chili",
+    "applicableRecipes": [
+      "R-18"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pick with silicone tongs"
+  },
+  {
+    "ingredientId": "ING-038",
+    "name": "Zucchini Ribbon Roses",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_zucchini_roses",
+    "applicableRecipes": [
+      "R-19"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Roll thin ribbon into rose"
+  },
+  {
+    "ingredientId": "ING-039",
+    "name": "Edible Pansy Flowers",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "top_pansy_flowers",
+    "applicableRecipes": [
+      "R-19"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Gentle floral garnish"
+  },
+  {
+    "ingredientId": "ING-040",
+    "name": "Spicy Pepperoni Slices",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_pepperoni_slices",
+    "applicableRecipes": [
+      "R-02"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice pepperoni stick"
+  },
+  {
+    "ingredientId": "ING-041",
+    "name": "Honey Glazed Diced Ham",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_diced_ham",
+    "applicableRecipes": [
+      "R-06"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Dice smoked ham"
+  },
+  {
+    "ingredientId": "ING-042",
+    "name": "Octopus Mini Frankfurters",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_octopus_franks",
+    "applicableRecipes": [
+      "R-07"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Notch frankfurter into tentacles"
+  },
+  {
+    "ingredientId": "ING-043",
+    "name": "Shredded BBQ Chicken",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_shredded_chicken",
+    "applicableRecipes": [
+      "R-11"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pull tender grilled chicken"
+  },
+  {
+    "ingredientId": "ING-044",
+    "name": "Crispy Bacon Strips",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_crispy_bacon",
+    "applicableRecipes": [
+      "R-14"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Grill bacon ribbons"
+  },
+  {
+    "ingredientId": "ING-045",
+    "name": "Takoyaki Baby Octopus Bites",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_baby_octopus",
+    "applicableRecipes": [
+      "R-12"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Boil tender octopus pieces"
+  },
+  {
+    "ingredientId": "ING-046",
+    "name": "Dancing Bonito Flakes",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_bonito_flakes",
+    "applicableRecipes": [
+      "R-12"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter on hot crust to dance"
+  },
+  {
+    "ingredientId": "ING-047",
+    "name": "Seasoned Taco Minced Beef",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_taco_beef",
+    "applicableRecipes": [
+      "R-13"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Brown spiced ground beef"
+  },
+  {
+    "ingredientId": "ING-048",
+    "name": "Fresh Farm Egg",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "top_farm_egg",
+    "applicableRecipes": [
+      "R-14"
+    ],
+    "compatibleTools": [],
+    "interactionType": "TAP",
+    "preparationRequirements": "Crack shell into central dough nest"
+  },
+  {
+    "ingredientId": "ING-050",
+    "name": "Mango Carved Sea Turtles",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "top_mango_turtles",
+    "applicableRecipes": [
+      "R-03"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Carve sweet mango into turtle"
+  },
+  {
+    "ingredientId": "ING-051",
+    "name": "Sweet Pineapple Chunks",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "top_pineapple_chunks",
+    "applicableRecipes": [
+      "R-06"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice tropical pineapple"
+  },
+  {
+    "ingredientId": "ING-052",
+    "name": "Fresh Wild Berries",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "top_wild_berries",
+    "applicableRecipes": [
+      "R-17"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Wash and sort raspberries and blueberries"
+  },
+  {
+    "ingredientId": "ING-053",
+    "name": "Sliced Fresh Strawberries",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "top_strawberry_slices",
+    "applicableRecipes": [
+      "R-04",
+      "R-17"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice strawberries thin"
+  },
+  {
+    "ingredientId": "ING-060",
+    "name": "Sour Cream Spiderweb",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_sour_cream_web",
+    "applicableRecipes": [
+      "R-08"
+    ],
+    "compatibleTools": [
+      "TOOL-009"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Pipe concentric web pattern"
+  },
+  {
+    "ingredientId": "ING-061",
+    "name": "Japanese Kewpie Mayo",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_kewpie_mayo",
+    "applicableRecipes": [
+      "R-12"
+    ],
+    "compatibleTools": [
+      "TOOL-010"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Squeeze 3-strip zig-zag lines"
+  },
+  {
+    "ingredientId": "ING-062",
+    "name": "Pure Golden Honey",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_golden_honey",
+    "applicableRecipes": [
+      "R-17"
+    ],
+    "compatibleTools": [
+      "TOOL-011"
+    ],
+    "interactionType": "SWIPE",
+    "preparationRequirements": "Drizzle golden sheen with wooden wand"
+  },
+  {
+    "ingredientId": "ING-063",
+    "name": "Mini Beach Lifebuoy Candies",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_lifebuoy_candies",
+    "applicableRecipes": [
+      "R-03"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Candy ring garnish"
+  },
+  {
+    "ingredientId": "ING-064",
+    "name": "Rainbow Gummy Bears",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_gummy_bears",
+    "applicableRecipes": [
+      "R-04"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Assorted colorful chewy bears"
+  },
+  {
+    "ingredientId": "ING-065",
+    "name": "Twisted Marshmallow Swirls",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_marshmallows",
+    "applicableRecipes": [
+      "R-04"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Fluffy vanilla marshmallows"
+  },
+  {
+    "ingredientId": "ING-066",
+    "name": "Gold Chocolate Doubloons",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_gold_doubloons",
+    "applicableRecipes": [
+      "R-07"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pirate treasure coins"
+  },
+  {
+    "ingredientId": "ING-067",
+    "name": "Skull & Crossbones Biscuits",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_skull_biscuits",
+    "applicableRecipes": [
+      "R-07",
+      "R-08"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Spooky ginger cookies"
+  },
+  {
+    "ingredientId": "ING-068",
+    "name": "Unicorn Horn Fondant Swirl",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_unicorn_horn",
+    "applicableRecipes": [
+      "R-09"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Spiral golden horn center"
+  },
+  {
+    "ingredientId": "ING-069",
+    "name": "Pastel Angel Meringue Wings",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_meringue_wings",
+    "applicableRecipes": [
+      "R-09"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pair of crispy light wings"
+  },
+  {
+    "ingredientId": "ING-070",
+    "name": "Fresh Popped Popcorn",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_popped_popcorn",
+    "applicableRecipes": [
+      "R-16"
+    ],
+    "compatibleTools": [
+      "TOOL-013"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pop kernels in lidded pan"
+  },
+  {
+    "ingredientId": "ING-071",
+    "name": "Caramel Pretzel Knots",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_caramel_pretzels",
+    "applicableRecipes": [
+      "R-16"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Salted sweet crunchy twists"
+  },
+  {
+    "ingredientId": "ING-072",
+    "name": "Planetary Sphere Cake-Pops",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_planet_cakepops",
+    "applicableRecipes": [
+      "R-20"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Saturn, Earth, Jupiter orb candies"
+  },
+  {
+    "ingredientId": "ING-073",
+    "name": "Crystal Sugar Meteorites",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_sugar_meteorites",
+    "applicableRecipes": [
+      "R-20"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Prismatic edible sparkling rocks"
+  },
+  {
+    "ingredientId": "ING-074",
+    "name": "Candy Canes & Reindeer Gingerbread",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "top_christmas_novelties",
+    "applicableRecipes": [
+      "R-10"
+    ],
+    "compatibleTools": [],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Peppermint candy and holiday cookies"
+  },
+  {
+    "ingredientId": "ING-075",
+    "name": "Golden Roasted Garlic Cloves",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_roasted_garlic",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter mellow roasted cloves"
+  },
+  {
+    "ingredientId": "ING-076",
+    "name": "Creamy Avocado Slices",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_avocado_slices",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice fresh green avocado"
+  },
+  {
+    "ingredientId": "ING-077",
+    "name": "Tender Artichoke Hearts",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_artichoke_hearts",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place marinated tender hearts"
+  },
+  {
+    "ingredientId": "ING-078",
+    "name": "Steamed Broccoli Florets",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_broccoli_florets",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter cute mini green broccoli trees"
+  },
+  {
+    "ingredientId": "ING-079",
+    "name": "Sweet Baby Green Peas",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_green_peas",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Sprinkle popping green garden peas"
+  },
+  {
+    "ingredientId": "ING-080",
+    "name": "Curled Zucchini Ribbons",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_zucchini_ribbons",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Twirl green summer zucchini ribbons"
+  },
+  {
+    "ingredientId": "ING-081",
+    "name": "Sun-Dried Ruby Tomatoes",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_sundried_tomatoes",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Arrange chewy intensely sweet sun-dried slices"
+  },
+  {
+    "ingredientId": "ING-082",
+    "name": "Fragrant Rosemary Sprigs",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_rosemary_sprigs",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Gently lay aromatic herbal needles"
+  },
+  {
+    "ingredientId": "ING-083",
+    "name": "Carrot Cutout Stars",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_carrot_stars",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-012"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Stamp orange carrot slices into star shapes"
+  },
+  {
+    "ingredientId": "ING-084",
+    "name": "Crisp Cucumber Wheels",
+    "category": "TOPPING_VEGGIE",
+    "visualIdentifier": "topping_cucumber_wheels",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice thin refreshing cucumber circles"
+  },
+  {
+    "ingredientId": "ING-085",
+    "name": "Boiled Octopus Tentacles",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_octopus_tentacles",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place purple curly ocean tentacles"
+  },
+  {
+    "ingredientId": "ING-086",
+    "name": "Sausage Octopus Cuties",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_sausage_octopus",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Notch wiener ends to bloom into 8 legs"
+  },
+  {
+    "ingredientId": "ING-087",
+    "name": "Jumbo Coral Pink Shrimp",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_pink_shrimp",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Arrange curled poached pink shrimp"
+  },
+  {
+    "ingredientId": "ING-088",
+    "name": "Seared Golden Scallop Coins",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_golden_scallops",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Arrange sweet caramelized sea scallops"
+  },
+  {
+    "ingredientId": "ING-089",
+    "name": "Slow-Cooked Pulled Pork",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_pulled_pork",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Shred tender smoky barbecue pork"
+  },
+  {
+    "ingredientId": "ING-090",
+    "name": "Grilled Beef Steak Strips",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_steak_strips",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice juicy seared steak slices"
+  },
+  {
+    "ingredientId": "ING-091",
+    "name": "Crispy Calamari Rings",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_calamari_rings",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Arrange golden crispy squid circles"
+  },
+  {
+    "ingredientId": "ING-092",
+    "name": "Mini Turkey Cocktail Sausages",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_cocktail_sausages",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place bite-sized savory sausages"
+  },
+  {
+    "ingredientId": "ING-093",
+    "name": "Smoked Salmon Rosettes",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_salmon_rosettes",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Roll pink smoked salmon into flower roses"
+  },
+  {
+    "ingredientId": "ING-094",
+    "name": "Ocean Crab Surimi Chunks",
+    "category": "TOPPING_MEAT",
+    "visualIdentifier": "topping_crab_surimi",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Flake red and white sweet seafood sticks"
+  },
+  {
+    "ingredientId": "ING-095",
+    "name": "Sweet Ripe Peach Slices",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_peach_slices",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice fuzzy golden sweet summer peaches"
+  },
+  {
+    "ingredientId": "ING-096",
+    "name": "Fresh Wild Raspberries",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_wild_raspberries",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter tart ruby red berries"
+  },
+  {
+    "ingredientId": "ING-097",
+    "name": "Honey Purple Fig Halves",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_fig_halves",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Halve jammy honeyed purple figs"
+  },
+  {
+    "ingredientId": "ING-098",
+    "name": "Carved Mango Sea Turtles",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_mango_sea_turtles",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Shape sweet mango cheeks into swimming turtles"
+  },
+  {
+    "ingredientId": "ING-099",
+    "name": "Juicy Watermelon Mini Cubes",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_watermelon_cubes",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Dice crisp seedless pink watermelon"
+  },
+  {
+    "ingredientId": "ING-100",
+    "name": "Crisp Green Apple Moons",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_apple_moons",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Slice crescent moon tart green apples"
+  },
+  {
+    "ingredientId": "ING-101",
+    "name": "Seedless Sweet Red Grapes",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_red_grapes",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Pluck plump juicy crimson grapes"
+  },
+  {
+    "ingredientId": "ING-102",
+    "name": "Cantaloupe Melon Pearls",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_cantaloupe_pearls",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-006"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scoop round orange melon spheres"
+  },
+  {
+    "ingredientId": "ING-103",
+    "name": "Ruby Red Dragonfruit Cubes",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_dragonfruit_cubes",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-002"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Dice speckled vibrant magenta dragonfruit"
+  },
+  {
+    "ingredientId": "ING-104",
+    "name": "Golden Papaya Flowers",
+    "category": "TOPPING_FRUIT",
+    "visualIdentifier": "topping_papaya_flowers",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-012"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Cut tropical golden papaya into flower shapes"
+  },
+  {
+    "ingredientId": "ING-105",
+    "name": "Rainbow Gummy Worms",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_gummy_worms",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Wiggle colorful sugary gummy worms"
+  },
+  {
+    "ingredientId": "ING-106",
+    "name": "Glazed Mini Donuts",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_mini_donuts",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place strawberry glazed tiny donuts"
+  },
+  {
+    "ingredientId": "ING-107",
+    "name": "Rainbow Sour Belt Ribbons",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_sour_belts",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Drape tangy striped sour ribbons"
+  },
+  {
+    "ingredientId": "ING-108",
+    "name": "Chocolate Hazelnut Drops",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_hazelnut_drops",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Dot glossy milk chocolate coated nuts"
+  },
+  {
+    "ingredientId": "ING-109",
+    "name": "White Chocolate Buttons",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_white_choco_buttons",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter sweet creamy white chocolate discs"
+  },
+  {
+    "ingredientId": "ING-110",
+    "name": "Toffee Butter Crunch Bits",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_toffee_crunch",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Sprinkle caramelized crunchy toffee nuggets"
+  },
+  {
+    "ingredientId": "ING-111",
+    "name": "Peppermint Candy Swirls",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_peppermint_swirls",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place festive red and white mint spirals"
+  },
+  {
+    "ingredientId": "ING-112",
+    "name": "Crispy Puffed Rice Treats",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_puffed_rice",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter crunchy marshmallow-bonded cereal clusters"
+  },
+  {
+    "ingredientId": "ING-113",
+    "name": "Pastel Bubblegum Balls",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_bubblegum_balls",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter shiny candy-coated gum spheres"
+  },
+  {
+    "ingredientId": "ING-114",
+    "name": "Cinnamon Sugar Toast Cubes",
+    "category": "TOPPING_SWEET",
+    "visualIdentifier": "topping_cinnamon_toast",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Sprinkle warm fragrant crunchy brioche croutons"
+  },
+  {
+    "ingredientId": "ING-115",
+    "name": "Gummy Beach Pool Floaties",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_beach_floaties",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place candy flamingo and unicorn swim rings"
+  },
+  {
+    "ingredientId": "ING-116",
+    "name": "Sparkling Cyan Sugar Ice-Cubes",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_cyan_ice_cubes",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter chilled clear blue crystal gelatin gems"
+  },
+  {
+    "ingredientId": "ING-117",
+    "name": "Saturn Ring Planet Macarons",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_saturn_macarons",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place galaxy macarons with sugar rings"
+  },
+  {
+    "ingredientId": "ING-118",
+    "name": "Gingerbread Cookie Men",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_gingerbread_men",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Place iced friendly holiday cookie figures"
+  },
+  {
+    "ingredientId": "ING-119",
+    "name": "Halloween Sugar Spiderweb Net",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_sugar_spiderweb",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-009"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Drape spun sugar creepy web patterns"
+  },
+  {
+    "ingredientId": "ING-120",
+    "name": "Dark Chocolate Bat Wings",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_chocolate_bat_wings",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Plant crisp spooky cocoa wings"
+  },
+  {
+    "ingredientId": "ING-121",
+    "name": "Shimmering Edible Rainbow Stars",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_rainbow_stars",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter iridescent pastel wafer stars"
+  },
+  {
+    "ingredientId": "ING-122",
+    "name": "Starlight Glowing Sugar Pearls",
+    "category": "TOPPING_FANTASY",
+    "visualIdentifier": "topping_glowing_pearls",
+    "applicableRecipes": [
+      "CREATIVE_MODE"
+    ],
+    "compatibleTools": [
+      "TOOL-015"
+    ],
+    "interactionType": "DRAG_AND_DROP",
+    "preparationRequirements": "Scatter luminescent golden sugar dragees"
+  }
+]

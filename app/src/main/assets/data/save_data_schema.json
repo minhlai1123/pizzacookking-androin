@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PizzaCookingWorldSaveData",
+  "type": "object",
+  "required": [
+    "app_version",
+    "settings",
+    "recipes_progress",
+    "creative_mode_stats"
+  ],
+  "properties": {
+    "app_version": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "object",
+      "required": [
+        "music_volume",
+        "sfx_volume",
+        "haptic_enabled"
+      ],
+      "properties": {
+        "music_volume": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "sfx_volume": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "haptic_enabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "recipes_progress": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "unlocked",
+          "stars",
+          "times_completed"
+        ],
+        "properties": {
+          "unlocked": {
+            "type": "boolean",
+            "default": true
+          },
+          "stars": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          },
+          "times_completed": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "creative_mode_stats": {
+      "type": "object",
+      "required": [
+        "pizzas_created"
+      ],
+      "properties": {
+        "pizzas_created": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

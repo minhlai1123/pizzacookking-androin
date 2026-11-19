@@ -1,0 +1,229 @@
+[
+  {
+    "toolId": "TOOL-001",
+    "name": "Rolling Pin",
+    "category": "PREPARATION",
+    "supportedActions": [
+      "ROLL",
+      "FLATTEN"
+    ],
+    "compatibleIngredients": [
+      "ING-001",
+      "ING-003",
+      "ING-004",
+      "ING-005",
+      "ING-007",
+      "ING-009",
+      "ING-010"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-002",
+    "name": "Chef Knife",
+    "category": "CUTTING",
+    "supportedActions": [
+      "SLICE",
+      "CHOP",
+      "NOTCH"
+    ],
+    "compatibleIngredients": [
+      "ING-002",
+      "ING-030",
+      "ING-031",
+      "ING-032",
+      "ING-033",
+      "ING-040",
+      "ING-041",
+      "ING-050",
+      "ING-051"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-003",
+    "name": "Wire Whisk",
+    "category": "MIXING",
+    "supportedActions": [
+      "WHISK",
+      "BEAT",
+      "FROTH"
+    ],
+    "compatibleIngredients": [
+      "ING-013",
+      "ING-017"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-004",
+    "name": "Glass Blender",
+    "category": "APPLIANCE",
+    "supportedActions": [
+      "BLEND",
+      "PUREE"
+    ],
+    "compatibleIngredients": [
+      "ING-013",
+      "ING-050",
+      "ING-051",
+      "ING-052"
+    ],
+    "interactionType": "HOLD"
+  },
+  {
+    "toolId": "TOOL-005",
+    "name": "Box Grater",
+    "category": "GRATING",
+    "supportedActions": [
+      "GRATE",
+      "SHRED"
+    ],
+    "compatibleIngredients": [
+      "ING-021",
+      "ING-022",
+      "ING-025",
+      "ING-026"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-006",
+    "name": "Sauce Ladle",
+    "category": "SPREADING",
+    "supportedActions": [
+      "SCOOP",
+      "SPREAD",
+      "SWIRL"
+    ],
+    "compatibleIngredients": [
+      "ING-011",
+      "ING-012",
+      "ING-013",
+      "ING-014",
+      "ING-015",
+      "ING-018",
+      "ING-020"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-007",
+    "name": "Pizza Peel",
+    "category": "BAKING",
+    "supportedActions": [
+      "SLIDE_IN",
+      "RETRIEVE"
+    ],
+    "compatibleIngredients": [],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-008",
+    "name": "Roller Cutter",
+    "category": "SERVING",
+    "supportedActions": [
+      "SLICE_WHEEL",
+      "DIVIDE"
+    ],
+    "compatibleIngredients": [],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-009",
+    "name": "Piping Bag",
+    "category": "DECORATING",
+    "supportedActions": [
+      "PIPE",
+      "DRAW_PATTERN"
+    ],
+    "compatibleIngredients": [
+      "ING-060"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-010",
+    "name": "Squeeze Bottle",
+    "category": "DISPENSING",
+    "supportedActions": [
+      "SQUEEZE",
+      "ZIGZAG"
+    ],
+    "compatibleIngredients": [
+      "ING-016",
+      "ING-019",
+      "ING-061"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-011",
+    "name": "Honey Dipper",
+    "category": "DRIZZLING",
+    "supportedActions": [
+      "TWIRL",
+      "DRIZZLE"
+    ],
+    "compatibleIngredients": [
+      "ING-062"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-012",
+    "name": "Shaped Cookie Cutters",
+    "category": "SHAPING",
+    "supportedActions": [
+      "STAMP",
+      "PRESS_CUT"
+    ],
+    "compatibleIngredients": [
+      "ING-006",
+      "ING-009",
+      "ING-023"
+    ],
+    "interactionType": "TAP"
+  },
+  {
+    "toolId": "TOOL-013",
+    "name": "Glass Popcorn Pan",
+    "category": "COOKING",
+    "supportedActions": [
+      "HEAT_POP",
+      "SHAKE"
+    ],
+    "compatibleIngredients": [
+      "ING-070"
+    ],
+    "interactionType": "HOLD"
+  },
+  {
+    "toolId": "TOOL-014",
+    "name": "Wooden Truffle Slicer",
+    "category": "SHAVING",
+    "supportedActions": [
+      "SHAVE",
+      "FLAKE"
+    ],
+    "compatibleIngredients": [
+      "ING-035"
+    ],
+    "interactionType": "SWIPE"
+  },
+  {
+    "toolId": "TOOL-015",
+    "name": "Silicone Chili Tongs",
+    "category": "HANDLING",
+    "supportedActions": [
+      "PICK_PLACE",
+      "PINCH"
+    ],
+    "compatibleIngredients": [
+      "ING-036",
+      "ING-037",
+      "ING-038"
+    ],
+    "interactionType": "DRAG_AND_DROP"
+  }
+]
